@@ -1,4 +1,11 @@
+I have tried to build a tree-structure of the spice files, following the '.include' statements from the top level file. For simplicity, 'cells' directory is moved under the 'models' directory. And all the files in 'cells' directory are  shown in a single 'cells' diretory. First file is when only 'tt' corner is used for fet devices. And second file is when all the corners are included. The motivation for doing this is that there are so many files. And it is very hard to understand the include hierarchy. To me, a text representation is much better to read than a graph representation, since there are so many files and the filenames are not short. Clear view can be obtained when the editor is set to show about 120 characters per a line.
+
+
+
 # skywater_fd_pr_tree
+
+
+
 
 sky130_tt.lib.spice
 ├── sky130_fd_pr_models/cells/sky130_fd_pr__nfet_01v8__tt.corner.spice
